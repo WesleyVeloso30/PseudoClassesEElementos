@@ -1,0 +1,67 @@
+/* seletor:pseudo-classe{
+    propriedade: valor;
+} */
+
+p:first-child {
+    color: aquamarine;
+}
+
+p:last-child {
+    color: blueviolet;
+}
+
+/* p:not(.padrão){
+    color: yellow;
+} */
+
+li:nth-child(6){
+    color: red;
+}
+
+li:nth-child(n+1):nth-child(-n+3){
+    color: blue;
+}
+
+li:nth-last-child(2){
+    color: yellow;
+}
+
+p:only-child{
+    color: red;
+}
+
+/* fim pseudo-classe */
+
+/* seletor:pseudo-elemento{
+    propriedade:valor
+} */
+
+.first-letter::first-letter{
+    color: coral;
+}
+
+.first-line::first-line{
+    color: coral;
+}
+
+#limarker::marker{
+    color: red;
+}
+
+.before::before{
+    content: '';
+    /* background: url('url da imagem') center center no-repeat; */
+    background-color: brown;
+    display: inline-block;
+    width: 90px;
+    height: 90px;
+}
+
+.after::after{
+    content: '';
+    /* content: url('url da imagem'); */
+    background-color: brown;
+    display: inline-block;
+    width: 90px;
+    height: 90px;
+}
